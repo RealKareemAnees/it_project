@@ -2,4 +2,37 @@
    Contact Us Page Styles
    ======================================== */
 
-/* Add contact page specific styles here */
+main {
+   display: grid;
+   gap: 1rem;
+}
+
+main section:nth-of-type(2) p {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+main section:nth-of-type(2) a {
+   display: inline-flex;
+   align-items: center;
+   padding: 0.18rem 0.55rem;
+   border-radius: var(--radius-pill);
+   background-color: rgba(184, 119, 66, 0.13);
+}
+
+main section:nth-of-type(2) a:hover {
+   background-color: rgba(184, 119, 66, 0.2);
+   text-decoration: none;
+}
+
+@media (min-width: 860px) {
+   main {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+   }
+
+   main section:first-of-type,
+   main section:last-of-type {
+      grid-column: 1 / -1;
+   }
+}

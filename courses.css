@@ -2,4 +2,25 @@
    My Courses Page Styles
    ======================================== */
 
-/* Add courses page specific styles here */
+main section {
+   overflow: hidden;
+}
+
+main section h2 {
+   margin-bottom: 0.4rem;
+}
+
+main section table {
+   margin-top: 0.6rem;
+}
+
+main section tbody td:first-child {
+   font-weight: 600;
+   color: var(--text-primary);
+}
+
+main section tbody td:last-child {
+   text-align: center;
+   width: 140px;
+   font-family: var(--font-ui);
+}

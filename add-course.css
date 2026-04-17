@@ -2,4 +2,19 @@
    Add Course Page Styles
    ======================================== */
 
-/* Add course page specific styles here */
+main section {
+   max-width: 780px;
+   margin-inline: auto;
+}
+
+main section h2 {
+   margin-bottom: 0.35rem;
+}
+
+main section p {
+   max-width: 64ch;
+}
+
+main section form {
+   margin-top: 0.85rem;
+}
